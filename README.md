@@ -11,6 +11,7 @@ The possible commands are:
 To execute successfully the code, there are required two other package. Clone the following repository in you workspace:
 - https://github.com/CarmineD8/slam_gmapping
 - https://github.com/CarmineD8/final_assignment
+
 After the clonation of each package, do a catkin_make. 
 
 ## Nodes
