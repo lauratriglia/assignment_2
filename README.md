@@ -7,7 +7,7 @@ The possible commands are:
 3) Follow the wall
 4) Stop the robot
 
-##P rerequisites
+## Prerequisites
 To execute successfully the code, there are required two other package. Clone the following repository in you workspace:
 - https://github.com/CarmineD8/slam_gmapping
 - https://github.com/CarmineD8/final_assignment
