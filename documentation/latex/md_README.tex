@@ -1,0 +1,51 @@
+In this repository you will find a package required for the construction of an interface whose the scope is to take commands from the user and execute them. The possible commands are\+: 1) Reach a random target 2) Choose a target among some possibilities which are (-\/4,-\/3);(-\/4,2);(-\/4,7);(5,-\/7);(5,-\/3);(5,1) 3) Follow the wall 4) Stop the robot
+
+\subsection*{Prerequisites}
+
+To execute successfully the code, there are required two other package. Clone the following repository in you workspace\+:
+\begin{DoxyItemize}
+\item \href{https://github.com/CarmineD8/slam_gmapping}{\tt https\+://github.\+com/\+Carmine\+D8/slam\+\_\+gmapping}
+\item \href{https://github.com/CarmineD8/final_assignment}{\tt https\+://github.\+com/\+Carmine\+D8/final\+\_\+assignment}
+\end{DoxyItemize}
+
+After the clonation of each package, do a catkin\+\_\+make.
+
+\subsection*{Nodes}
+
+\subsubsection*{\hyperlink{interface_8py}{interface.\+py}}
+
+It takes the commands from the user and execute them
+
+\subsubsection*{random\+\_\+service}
+
+It generate the random target required for the first command
+
+\subsection*{How the node communicate to each other}
+
+You can find in the doc directory, the ros\+\_\+graph -\/$>$ it shows how the node communicate to each othere
+
+\subsection*{How to run the code\+:}
+
+
+\begin{DoxyItemize}
+\item As first step it is necessary to run a command to create the master 
+\begin{DoxyCode}
+1 roscore & 
+\end{DoxyCode}
+
+\item As second step run the simulation space with 
+\begin{DoxyCode}
+1 roslaunch final\_assignment simulation\_gmapping.launch
+\end{DoxyCode}
+
+\item As third step in another shell use the command to run the launch move\+\_\+base 
+\begin{DoxyCode}
+1 roslaunch final\_assignment move\_base.launch
+\end{DoxyCode}
+
+\item As last step, in another shell, use the command to run the interface 
+\begin{DoxyCode}
+1 roslaunch triglia\_final\_assignment assignment2.launch
+\end{DoxyCode}
+ 
+\end{DoxyItemize}
