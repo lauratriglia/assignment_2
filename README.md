@@ -45,4 +45,7 @@ roslaunch final_assignment move_base.launch
 ```
 roslaunch triglia_final_assignment assignment2.launch
 ```
+## Considerations
+The program responds to all requests to which it is subjected. There are some limitations such as loading the map, which does not always happen successfully, which leads to problems in the execution of the task by the robot. 
+Furthermore, the bug0 algorithm is not implemented
 
